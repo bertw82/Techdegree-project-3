@@ -15,76 +15,133 @@
 <main>
   <form action="index.html" method="POST">
     <fieldset>
-      <legend>Contact Information</legend>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" value="Required" required="required">
-        <label for="mail">Email Address</label>
-        <input type="email" id="mail" name="user_email" value="Required" required="required">
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="user_phone">
-        <label for="street">Street Address</label>
-        <input type="text" id="street" name="user_street">
-        <label for="city">City</label>
-        <input type="text" id="city" name="user_city">
-        <label for="state">State</label>
-        <select id="state" name="user_state">
-          <optgroup label="Choose State">
-            <option value="Alabama">Alabama</option>
-            <option value="Alaska">Alaska</option>
-            <option value="Arizona">Arizona</option>
-            <option value="Arkansas">Arkansas</option>
-            <option value="California">California</option>
-            <option value="Colorado">Colorado</option>
-            <option value="Connecticut">Connecticut</option>
-            <option value="Delaware">Delaware</option>
-            <option value="Florida">Florida</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Hawaii">Hawaii</option>
-            <option value="Idaho">Idaho</option>
-            <option value="Illinois">Illinois</option>
-            <option value="Indiana">Indiana</option>
-            <option value="Iowa">Iowa</option>
-            <option value="Kentucky">Kentucky</option>
-            <option value="Louisiana">Louisiana</option>
-            <option value="Maine">Maine</option>
-            <option value="Maryland">Maryland</option>
-            <option value="Massachusetts">Massachusetts</option>
-            <option value="Michigan">Michigan</option>
-            <option value="Minnesota">Minnesota</option>
-            <option value="Mississippi">Mississippi</option>
-            <option value="Missouri">Missouri</option>
-            <option value="Montana">Montana</option>
-            <option value="Nebraska">Nebraska</option>
-            <option value="Nevada">Nevada</option>
-            <option value="New Hampshire">New Hampshire</option>
-            <option value="New Jersey">New Jersey</option>
-            <option value="New Mexico">New Mexico</option>
-            <option value="New York">New York</option>
-            <option value="North Carolina">North Carolina</option>
-            <option value="North Dakota">North Dakota</option>
-            <option value="Ohio">Ohio</option>
-            <option value="Oklahoma">Oklahoma</option>
-            <option value="Oregon">Oregon</option>
-            <option value="Pennsylvania">Pennsylvania</option>
-            <option value="Rhode Island">Rhode Island</option>
-            <option value="South Carolina">South Carolina</option>
-            <option value="South Dakota">South Dakota</option>
-            <option value="Tennessee">Tennessee</option>
-            <option value="Texas">Texas</option>
-            <option value="Utah">Utah</option>
-            <option value="Vermont">Vermont</option>
-            <option value="Virginia">Virginia</option>
-            <option value="Washington">Washington</option>
-            <option value="West Virginia">West Virginia</option>
-            <option value="Wisconsin">Wisconsin</option>
-            <option value="Wyoming">Wyoming</option>
-          </optgroup>
+      <legend>
+        <h2>Contact Information</h2>
+      </legend>
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required" required="required">
+        </div>
+        <div>
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user_email" placeholder="Required" required="required">
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user_phone">
+        </div>
+        <div>
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="user_street">
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city">
+        </div>
+        <div>
+          <label for="state">State</label>
+          <select id="state" name="user_state">
+            <optgroup label="Choose State">
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </optgroup>
+        </div>
+        </select>
+        <div>
+          <label for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" name="user_zip">
+        </div>
     </fieldset>
 
     <fieldset>
-      <legend>Newsletter</legend>
+      <legend>
+        <h2>Newsletter</h2>
+      </legend>
+      <div>
+        <label>Select the newsletters you would like to receive</label>
+        <div>
+          <input type="checkbox" id="html_news" name="news" value="html">
+          <label for="html_news">HTML News</label>
+        </div>
+        <div>
+          <input type="checkbox" id="css_news" name="news" value="css">
+          <label for="css_news">CSS News</label>
+        </div>
+        <div>
+          <input type="checkbox" id="js_news" name="news" value="js">
+          <label for="js_news">Javascript News</label>
+        </div>
+      </div>
+
+      <div>
+        <label>Newsletter Format</label>
+        <div>
+          <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label>
+        </div>
+        <div>
+          <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label>
+        </div>
+        <div>
+          <label for="topics">Other topics you'd like to hear about</label>
+          <textarea id="topics" name="user_topics"></textarea>
+        </div>
+        <div>
+          <button type="submit">Sign Up</button>
+        </div>
+      </div>
     </fieldset>
   </form>
 </main>
+
+<footer>
+  <p>Copyright The Code Review</p>
+</footer>
 </body>
 </html>
