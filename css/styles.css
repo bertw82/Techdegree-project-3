@@ -61,7 +61,7 @@ main {
 }
 
 form {
-  background: rgb(252, 233, 224);
+  background: rgb(255, 245, 190);
   margin-top: .625em;
   border-radius: .625em;
 }
@@ -113,7 +113,7 @@ input[type="email"],
 input[type="tel"],
 select[id="state"],
 textarea[id="topics"] {
-  background: rgb(220, 220, 221);
+  background: rgb(228, 228, 228);
   padding: 1em;
   border: none;
   border-radius: .3125em;
@@ -127,10 +127,10 @@ input[type="tel"]:focus,
 select[id="state"]:focus,
 textarea[id="topics"]:focus {
   color: rgb(1, 5, 66);
-  background-color: rgb(193, 255, 211);
+  background-color: rgb(218, 255, 229);
 }
 
-select[id="state"] {
+select {
   font-style: italic;
   color: rgb(83, 83, 83);
 }
@@ -168,17 +168,17 @@ button {
   font-family: inherit;
   font-size: 1rem;
   padding: 1.3125em;
-  background: lightskyblue;
+  background: rgb(46, 108, 146);
   color: lightyellow;
   font-weight: bold;
   letter-spacing: .0625em;
   border: none;
   border-radius: .3125em;
-  text-shadow: -1px 1px 3px navy;
+  text-shadow: -1px 1px 3px rgb(0, 0, 78);
 }
 
 button:hover {
-  background: rgb(190, 230, 255);
+  background: rgb(127, 202, 248);
 }
 
 button:active {
