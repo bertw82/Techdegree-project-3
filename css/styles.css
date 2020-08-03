@@ -126,8 +126,13 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select[id="state"]:focus,
 textarea[id="topics"]:focus {
-  color: rgb(0, 6, 87);
+  color: rgb(1, 5, 66);
   background-color: rgb(193, 255, 211);
+}
+
+select[id="state"] {
+  font-style: italic;
+  color: rgb(83, 83, 83);
 }
 
 input[id="zip-code"] {
