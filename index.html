@@ -17,7 +17,7 @@
     <p>Get the latest news on how your code is doing right in your inbox</p>
 </section>
   <form action="index.html" method="POST">
-    <fieldset>
+    <fieldset class="contact">
       <legend>
         <h2>Contact Information</h2>
       </legend>
@@ -31,7 +31,7 @@
         </div>
         <div class="flex">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="user_phone">
+          <input type="tel" id="phone" name="user_phone" placeholder="(###) ### - ####">
         </div>
         <div class="flex">
           <label for="street">Street Address</label>
@@ -99,7 +99,7 @@
         </select>
         <div class="flex">
           <label for="zip-code">Zip Code</label>
-          <input type="text" id="zip-code" name="user_zip">
+          <input type="text" id="zip-code" name="user_zip" placeholder="##### - ####">
         </div>
     </fieldset>
 
@@ -107,37 +107,30 @@
       <legend>
         <h2>Newsletter</h2>
       </legend>
-      <div>
-        <label>Select the newsletters you would like to receive</label>
-        <div>
-          <input type="checkbox" id="html_news" name="news" value="html">
-          <label for="html_news">HTML News</label>
-        </div>
-        <div>
-          <input type="checkbox" id="css_news" name="news" value="css">
-          <label for="css_news">CSS News</label>
-        </div>
-        <div>
-          <input type="checkbox" id="js_news" name="news" value="js">
-          <label for="js_news">Javascript News</label>
+      <div class="newsletter">
+        <label>Select the newsletters you would like to receive</label><br>
+        <div class="check">
+          <input type="checkbox" id="html_news" name="news" value="html"><label for="html_news">HTML News</label><br>
+          <input type="checkbox" id="css_news" name="news" value="css"><label for="css_news">CSS News</label><br>
+          <input type="checkbox" id="js_news" name="news" value="js"><label for="js_news">Javascript News</label>
         </div>
       </div>
 
-      <div>
+      <div class="newsletter">
         <label>Newsletter Format</label>
-        <div>
-          <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label>
-        </div>
-        <div>
-          <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label>
-        </div>
-        <div>
-          <label for="topics">Other topics you'd like to hear about</label>
-          <textarea id="topics" name="user_topics"></textarea>
-        </div>
-        <div>
-          <button type="submit">Sign Up</button>
-        </div>
+        <div class="check">
+          <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br>
+          <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label><br>
+       </div>
+      </div>
+
+      <div class="newsletter">
+        <label for="topics" class="text-area">Other topics you'd like to hear about</label>
+        <textarea id="topics" name="user_topics"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Sign Up</button>
       </div>
     </fieldset>
   </form>
