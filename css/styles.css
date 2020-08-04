@@ -84,7 +84,7 @@ fieldset {
 
 .text-area {
   display: block;
-  padding-bottom: 1em;
+  padding-bottom: .625em;
 }
 
 /* Form Styles */
