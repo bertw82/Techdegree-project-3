@@ -90,7 +90,8 @@ fieldset {
 /* Form Styles */
 
 p,
-label {
+label,
+span {
   font-size: .875rem;
 }
 
