@@ -84,7 +84,7 @@ fieldset {
 
 .text-area {
   display: block;
-  padding-bottom: .3125em;
+  padding-bottom: 1em;
 }
 
 /* Form Styles */
@@ -127,7 +127,7 @@ input[type="tel"]:focus,
 select[id="state"]:focus,
 textarea[id="topics"]:focus {
   color: rgb(1, 5, 66);
-  background-color: rgb(218, 255, 229);
+  background-color: #fff;
 }
 
 select {
@@ -146,6 +146,7 @@ input[placeholder="Required"] {
 
 input[placeholder="Required"]:focus {
   text-align: left;
+  font-style: normal;
 }
 
 .newsletter {
@@ -182,14 +183,67 @@ button:hover {
 }
 
 button:active {
-  background: rgb(161, 61, 255);
+  color: rgb(255, 255, 25);
+  background: rgb(81, 188, 255);
   border: none;
-  box-shadow: inset 0 0 2px 2px rgba(0,0,0,.2);
+  box-shadow: 0 0 2px 2px rgba(0,0,0, .2);
 }
 
+@media screen and (min-width: 768px) {
 
+  main {
+    width: 60%;
+  }
 
+  section {
+    padding-top: 1.625em;
+  }
+  
+  section p {
+    padding-bottom: 1.625em;
+  }
 
+  .flex {
+    flex-direction: row;
+    padding-bottom: 1em;
+  }
+
+  .flex:last-child {
+    padding-bottom: 1.625em;
+  }
+
+  .title {
+    flex-grow: 1;
+  } 
+
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6,
+  .item-7 {
+    align-self: center;
+    flex-basis: 9em;
+  }
+
+  .contact {
+    margin-top: 2em;
+  }
+
+  .contact label {
+    padding: 0;
+  }
+
+  .field {
+    padding-top: 1.3125em;
+  }
+
+  input[id="zip-code"] {
+    max-width: 25%;
+  }
+
+}
 
 
 
